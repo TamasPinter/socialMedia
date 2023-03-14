@@ -1,0 +1,27 @@
+{
+  "name": "socialmedia",
+  "version": "1.0.0",
+  "description": "A repository showing useful aspects of constructing a social media webApp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TamasPinter/socialMedia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TamasPinter/socialMedia/issues"
+  },
+  "homepage": "https://github.com/TamasPinter/socialMedia#readme",
+  "dependencies": {
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.1",
+    "nodemon": "^2.0.21"
+  }
+}
