@@ -6,32 +6,31 @@ const userSchema = new Schema(
             type: String,
             required: true,
             unique: true,
-            trimmed: true,
+            trim: true,
         },
         email: {
             type: String,
             required: true,
             unique: true,
-            validate: {
-                isEmail: true,
-            }
+            match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please enter a valid email address'],
         },
         thoughts: [
             {
                 type: Schema.Types.ObjectId,
-                ref: 'thought',
+                ref: 'Thought',
             }
         ],
         friends: [
             {
                 type: Schema.Types.ObjectId,
-                ref: 'user',
+                ref: 'User',
             }
         ]
     },
     {
         toJSON: {
             virtuals: true,
+            getters: true,
         },
         id: false,
     }
